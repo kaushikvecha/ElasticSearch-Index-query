@@ -1,0 +1,147 @@
+[2017-08-27 01:37:58,163][INFO ][node                     ] [M-Twins] version[1.3.4], pid[27295], build[a70f3cc/2014-09-30T09:07:17Z]
+[2017-08-27 01:37:58,164][INFO ][node                     ] [M-Twins] initializing ...
+[2017-08-27 01:37:58,178][INFO ][plugins                  ] [M-Twins] loaded [marvel], sites [marvel]
+[2017-08-27 01:38:01,490][INFO ][node                     ] [M-Twins] initialized
+[2017-08-27 01:38:01,491][INFO ][node                     ] [M-Twins] starting ...
+[2017-08-27 01:38:01,791][INFO ][transport                ] [M-Twins] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.0.0.37:9300]}
+[2017-08-27 01:38:01,896][INFO ][discovery                ] [M-Twins] Jobsearch/MQR-AW47RWKfetQ-EG7KEw
+[2017-08-27 01:38:04,913][INFO ][cluster.service          ] [M-Twins] new_master [M-Twins][MQR-AW47RWKfetQ-EG7KEw][Harishs-MacBook-Pro-2.local][inet[/10.0.0.37:9300]], reason: zen-disco-join (elected_as_master)
+[2017-08-27 01:38:04,961][INFO ][http                     ] [M-Twins] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.0.0.37:9200]}
+[2017-08-27 01:38:04,962][INFO ][node                     ] [M-Twins] started
+[2017-08-27 01:38:05,875][INFO ][gateway                  ] [M-Twins] recovered [3] indices into cluster_state
+[2017-08-27 01:38:11,742][INFO ][cluster.metadata         ] [M-Twins] [.marvel-2017.08.27] creating index, cause [auto(bulk api)], shards [1]/[1], mappings [_default_, shard_event, index_event, index_stats, routing_event, node_event, cluster_event, cluster_state, cluster_stats, node_stats, indices_stats]
+[2017-08-27 01:38:11,998][INFO ][cluster.metadata         ] [M-Twins] [.marvel-2017.08.27] update_mapping [node_stats] (dynamic)
+[2017-08-27 01:38:12,189][INFO ][cluster.metadata         ] [M-Twins] [.marvel-2017.08.27] update_mapping [routing_event] (dynamic)
+[2017-08-27 01:38:12,206][INFO ][cluster.metadata         ] [M-Twins] [.marvel-2017.08.27] update_mapping [shard_event] (dynamic)
+[2017-08-27 01:38:12,209][INFO ][cluster.metadata         ] [M-Twins] [.marvel-2017.08.27] update_mapping [cluster_state] (dynamic)
+[2017-08-27 01:38:12,212][INFO ][cluster.metadata         ] [M-Twins] [.marvel-2017.08.27] update_mapping [node_event] (dynamic)
+[2017-08-27 01:38:12,216][INFO ][cluster.metadata         ] [M-Twins] [.marvel-2017.08.27] update_mapping [cluster_event] (dynamic)
+[2017-08-27 01:38:12,220][INFO ][cluster.metadata         ] [M-Twins] [.marvel-2017.08.27] update_mapping [index_event] (dynamic)
+[2017-08-27 01:38:12,264][INFO ][cluster.metadata         ] [M-Twins] [.marvel-2017.08.27] update_mapping [indices_stats] (dynamic)
+[2017-08-27 01:38:12,280][INFO ][cluster.metadata         ] [M-Twins] [.marvel-2017.08.27] update_mapping [index_stats] (dynamic)
+[2017-08-27 01:38:12,310][INFO ][cluster.metadata         ] [M-Twins] [.marvel-2017.08.27] update_mapping [cluster_stats] (dynamic)
+[2017-08-27 01:44:55,693][DEBUG][action.search.type       ] [M-Twins] [indeed-jobs][0], node[MQR-AW47RWKfetQ-EG7KEw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7c3fcd4c] lastShard [true]
+org.elasticsearch.search.SearchParseException: [indeed-jobs][0]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"multi_match":{"type":"phrase","fields":["title","summary","url"],"operator":"and"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:660)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:516)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:488)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:206)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:203)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:517)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [indeed-jobs] No text specified for match_all query
+	at org.elasticsearch.index.query.MultiMatchQueryParser.parse(MultiMatchQueryParser.java:145)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:239)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:342)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:268)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:263)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:644)
+	... 9 more
+[2017-08-27 01:44:55,697][DEBUG][action.search.type       ] [M-Twins] [indeed-jobs][3], node[MQR-AW47RWKfetQ-EG7KEw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7c3fcd4c]
+org.elasticsearch.search.SearchParseException: [indeed-jobs][3]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"multi_match":{"type":"phrase","fields":["title","summary","url"],"operator":"and"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:660)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:516)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:488)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:206)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:203)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:517)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [indeed-jobs] No text specified for match_all query
+	at org.elasticsearch.index.query.MultiMatchQueryParser.parse(MultiMatchQueryParser.java:145)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:239)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:342)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:268)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:263)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:644)
+	... 9 more
+[2017-08-27 01:44:55,697][DEBUG][action.search.type       ] [M-Twins] [indeed-jobs][1], node[MQR-AW47RWKfetQ-EG7KEw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7c3fcd4c] lastShard [true]
+org.elasticsearch.search.SearchParseException: [indeed-jobs][1]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"multi_match":{"type":"phrase","fields":["title","summary","url"],"operator":"and"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:660)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:516)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:488)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:206)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:203)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:517)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [indeed-jobs] No text specified for match_all query
+	at org.elasticsearch.index.query.MultiMatchQueryParser.parse(MultiMatchQueryParser.java:145)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:239)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:342)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:268)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:263)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:644)
+	... 9 more
+[2017-08-27 01:44:55,697][DEBUG][action.search.type       ] [M-Twins] [indeed-jobs][2], node[MQR-AW47RWKfetQ-EG7KEw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7c3fcd4c] lastShard [true]
+org.elasticsearch.search.SearchParseException: [indeed-jobs][2]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"multi_match":{"type":"phrase","fields":["title","summary","url"],"operator":"and"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:660)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:516)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:488)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:206)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:203)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:517)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [indeed-jobs] No text specified for match_all query
+	at org.elasticsearch.index.query.MultiMatchQueryParser.parse(MultiMatchQueryParser.java:145)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:239)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:342)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:268)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:263)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:644)
+	... 9 more
+[2017-08-27 01:44:55,697][DEBUG][action.search.type       ] [M-Twins] [indeed-jobs][4], node[MQR-AW47RWKfetQ-EG7KEw], [P], s[STARTED]: Failed to execute [org.elasticsearch.action.search.SearchRequest@7c3fcd4c] lastShard [true]
+org.elasticsearch.search.SearchParseException: [indeed-jobs][4]: from[-1],size[-1]: Parse Failure [Failed to parse source [{"query":{"multi_match":{"type":"phrase","fields":["title","summary","url"],"operator":"and"}}}]]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:660)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:516)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:488)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:257)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:206)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$5.call(SearchServiceTransportAction.java:203)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$23.run(SearchServiceTransportAction.java:517)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.elasticsearch.index.query.QueryParsingException: [indeed-jobs] No text specified for match_all query
+	at org.elasticsearch.index.query.MultiMatchQueryParser.parse(MultiMatchQueryParser.java:145)
+	at org.elasticsearch.index.query.QueryParseContext.parseInnerQuery(QueryParseContext.java:239)
+	at org.elasticsearch.index.query.IndexQueryParserService.innerParse(IndexQueryParserService.java:342)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:268)
+	at org.elasticsearch.index.query.IndexQueryParserService.parse(IndexQueryParserService.java:263)
+	at org.elasticsearch.search.query.QueryParseElement.parse(QueryParseElement.java:33)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:644)
+	... 9 more
+[2017-08-27 01:44:55,701][DEBUG][action.search.type       ] [M-Twins] All shards failed for phase: [query]
+[2017-08-27 01:50:41,999][INFO ][node                     ] [M-Twins] stopping ...
+[2017-08-27 01:50:42,061][INFO ][node                     ] [M-Twins] stopped
+[2017-08-27 01:50:42,061][INFO ][node                     ] [M-Twins] closing ...
+[2017-08-27 01:50:42,070][INFO ][node                     ] [M-Twins] closed
+[2017-08-27 10:25:20,500][INFO ][node                     ] [Baron Macabre] version[1.3.4], pid[27657], build[a70f3cc/2014-09-30T09:07:17Z]
+[2017-08-27 10:25:20,501][INFO ][node                     ] [Baron Macabre] initializing ...
+[2017-08-27 10:25:20,517][INFO ][plugins                  ] [Baron Macabre] loaded [marvel], sites [marvel]
+[2017-08-27 10:25:23,891][INFO ][node                     ] [Baron Macabre] initialized
+[2017-08-27 10:25:23,891][INFO ][node                     ] [Baron Macabre] starting ...
+[2017-08-27 10:25:24,158][INFO ][transport                ] [Baron Macabre] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.0.0.37:9300]}
+[2017-08-27 10:25:24,275][INFO ][discovery                ] [Baron Macabre] Jobsearch/2sdbt390QQeG-LvbiDLwdw
+[2017-08-27 10:25:27,294][INFO ][cluster.service          ] [Baron Macabre] new_master [Baron Macabre][2sdbt390QQeG-LvbiDLwdw][Harishs-MacBook-Pro-2.local][inet[/10.0.0.37:9300]], reason: zen-disco-join (elected_as_master)
+[2017-08-27 10:25:27,358][INFO ][http                     ] [Baron Macabre] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.0.0.37:9200]}
+[2017-08-27 10:25:27,360][INFO ][node                     ] [Baron Macabre] started
+[2017-08-27 10:25:28,324][INFO ][gateway                  ] [Baron Macabre] recovered [4] indices into cluster_state
+[2017-08-27 11:12:37,953][INFO ][node                     ] [Baron Macabre] stopping ...
+[2017-08-27 11:12:38,015][INFO ][node                     ] [Baron Macabre] stopped
+[2017-08-27 11:12:38,015][INFO ][node                     ] [Baron Macabre] closing ...
+[2017-08-27 11:12:38,023][INFO ][node                     ] [Baron Macabre] closed

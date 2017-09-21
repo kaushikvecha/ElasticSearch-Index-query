@@ -1,0 +1,43 @@
+[2017-08-25 14:35:54,400][INFO ][node                     ] [Ant-Man] version[1.3.4], pid[16231], build[a70f3cc/2014-09-30T09:07:17Z]
+[2017-08-25 14:35:54,400][INFO ][node                     ] [Ant-Man] initializing ...
+[2017-08-25 14:35:54,405][INFO ][plugins                  ] [Ant-Man] loaded [], sites []
+[2017-08-25 14:35:56,234][INFO ][node                     ] [Ant-Man] initialized
+[2017-08-25 14:35:56,234][INFO ][node                     ] [Ant-Man] starting ...
+[2017-08-25 14:35:56,325][INFO ][transport                ] [Ant-Man] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.0.110:9300]}
+[2017-08-25 14:35:56,358][INFO ][discovery                ] [Ant-Man] elasticsearch/KM4DOJxvT-yEZ-WrjkNhuQ
+[2017-08-25 14:35:59,389][INFO ][cluster.service          ] [Ant-Man] new_master [Ant-Man][KM4DOJxvT-yEZ-WrjkNhuQ][saintsnest][inet[/192.168.0.110:9300]], reason: zen-disco-join (elected_as_master)
+[2017-08-25 14:35:59,432][INFO ][http                     ] [Ant-Man] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.0.110:9200]}
+[2017-08-25 14:35:59,433][INFO ][node                     ] [Ant-Man] started
+[2017-08-25 14:35:59,479][INFO ][gateway                  ] [Ant-Man] recovered [0] indices into cluster_state
+[2017-08-25 14:36:01,016][INFO ][cluster.metadata         ] [Ant-Man] [bank] creating index, cause [api], shards [5]/[1], mappings [account]
+[2017-08-25 14:36:18,293][INFO ][cluster.metadata         ] [Ant-Man] [bank] deleting index
+[2017-08-25 14:36:18,347][INFO ][cluster.metadata         ] [Ant-Man] [bank] creating index, cause [api], shards [5]/[1], mappings [account]
+[2017-08-25 15:46:27,642][INFO ][cluster.metadata         ] [Ant-Man] [indeed-jobs] creating index, cause [auto(index api)], shards [5]/[1], mappings []
+[2017-08-25 15:46:28,295][INFO ][cluster.metadata         ] [Ant-Man] [indeed-jobs] update_mapping [jobs] (dynamic)
+[2017-08-25 16:11:36,698][INFO ][node                     ] [Ghost Rider] version[1.3.4], pid[27912], build[a70f3cc/2014-09-30T09:07:17Z]
+[2017-08-25 16:11:36,699][INFO ][node                     ] [Ghost Rider] initializing ...
+[2017-08-25 16:11:36,703][INFO ][plugins                  ] [Ghost Rider] loaded [], sites []
+[2017-08-25 16:11:38,524][INFO ][node                     ] [Ghost Rider] initialized
+[2017-08-25 16:11:38,524][INFO ][node                     ] [Ghost Rider] starting ...
+[2017-08-25 16:11:38,633][INFO ][transport                ] [Ghost Rider] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.0.110:9300]}
+[2017-08-25 16:11:38,658][INFO ][discovery                ] [Ghost Rider] elasticsearch/o4DIB89NQCKm41uCyzIfzQ
+[2017-08-25 16:11:41,677][INFO ][cluster.service          ] [Ghost Rider] new_master [Ghost Rider][o4DIB89NQCKm41uCyzIfzQ][saintsnest][inet[/192.168.0.110:9300]], reason: zen-disco-join (elected_as_master)
+[2017-08-25 16:11:41,698][INFO ][http                     ] [Ghost Rider] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.0.110:9200]}
+[2017-08-25 16:11:41,699][INFO ][node                     ] [Ghost Rider] started
+[2017-08-25 16:11:42,296][INFO ][gateway                  ] [Ghost Rider] recovered [2] indices into cluster_state
+[2017-08-25 17:49:57,030][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2017-08-25 17:49:57,180][INFO ][node                     ] [Rachel Summers] version[1.3.4], pid[11136], build[a70f3cc/2014-09-30T09:07:17Z]
+[2017-08-25 17:49:57,180][INFO ][node                     ] [Rachel Summers] initializing ...
+[2017-08-25 17:49:57,184][INFO ][plugins                  ] [Rachel Summers] loaded [], sites []
+[2017-08-25 17:50:00,471][INFO ][node                     ] [Rachel Summers] initialized
+[2017-08-25 17:50:00,471][INFO ][node                     ] [Rachel Summers] starting ...
+[2017-08-25 17:50:01,760][INFO ][transport                ] [Rachel Summers] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.141:9300]}
+[2017-08-25 17:50:02,343][INFO ][discovery                ] [Rachel Summers] elasticsearch/SytGXqvbRXWlupaHYccrEA
+[2017-08-25 17:50:05,371][INFO ][cluster.service          ] [Rachel Summers] new_master [Rachel Summers][SytGXqvbRXWlupaHYccrEA][LAPTOP-V07PSLN5][inet[/192.168.1.141:9300]], reason: zen-disco-join (elected_as_master)
+[2017-08-25 17:50:05,694][INFO ][http                     ] [Rachel Summers] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.141:9200]}
+[2017-08-25 17:50:05,694][INFO ][node                     ] [Rachel Summers] started
+[2017-08-25 17:50:06,098][INFO ][gateway                  ] [Rachel Summers] recovered [2] indices into cluster_state
+[2017-08-25 19:52:36,371][INFO ][node                     ] [Rachel Summers] stopping ...
+[2017-08-25 19:52:36,446][INFO ][node                     ] [Rachel Summers] stopped
+[2017-08-25 19:52:36,446][INFO ][node                     ] [Rachel Summers] closing ...
+[2017-08-25 19:52:36,454][INFO ][node                     ] [Rachel Summers] closed

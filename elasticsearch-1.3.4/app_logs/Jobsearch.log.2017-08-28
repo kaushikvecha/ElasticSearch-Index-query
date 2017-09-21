@@ -1,0 +1,29 @@
+[2017-08-28 09:39:21,595][INFO ][node                     ] [Neophyte] stopping ...
+[2017-08-28 09:39:21,891][INFO ][node                     ] [Neophyte] stopped
+[2017-08-28 09:39:21,891][INFO ][node                     ] [Neophyte] closing ...
+[2017-08-28 09:39:21,907][INFO ][node                     ] [Neophyte] closed
+[2017-08-28 14:17:56,370][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2017-08-28 14:17:56,588][INFO ][node                     ] [Nebulo] version[1.3.4], pid[5024], build[a70f3cc/2014-09-30T09:07:17Z]
+[2017-08-28 14:17:56,588][INFO ][node                     ] [Nebulo] initializing ...
+[2017-08-28 14:17:56,673][INFO ][plugins                  ] [Nebulo] loaded [marvel], sites [marvel]
+[2017-08-28 14:18:02,573][INFO ][node                     ] [Nebulo] initialized
+[2017-08-28 14:18:02,574][INFO ][node                     ] [Nebulo] starting ...
+[2017-08-28 14:18:03,632][INFO ][transport                ] [Nebulo] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.141:9300]}
+[2017-08-28 14:18:04,316][INFO ][discovery                ] [Nebulo] Jobsearch/vkKyXhbLTxKTDrXTdOQwXQ
+[2017-08-28 14:18:07,376][INFO ][cluster.service          ] [Nebulo] new_master [Nebulo][vkKyXhbLTxKTDrXTdOQwXQ][LAPTOP-V07PSLN5][inet[/192.168.1.141:9300]], reason: zen-disco-join (elected_as_master)
+[2017-08-28 14:18:07,676][INFO ][http                     ] [Nebulo] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.141:9200]}
+[2017-08-28 14:18:07,677][INFO ][node                     ] [Nebulo] started
+[2017-08-28 14:18:08,609][INFO ][gateway                  ] [Nebulo] recovered [5] indices into cluster_state
+[2017-08-28 14:18:13,146][INFO ][cluster.metadata         ] [Nebulo] [.marvel-2017.08.28] update_mapping [node_event] (dynamic)
+[2017-08-28 14:18:13,194][INFO ][cluster.metadata         ] [Nebulo] [.marvel-2017.08.28] update_mapping [cluster_event] (dynamic)
+[2017-08-28 14:18:13,196][INFO ][cluster.metadata         ] [Nebulo] [.marvel-2017.08.28] update_mapping [index_event] (dynamic)
+[2017-08-28 19:36:56,125][INFO ][cluster.metadata         ] [Nebulo] [.marvel-2017.08.29] creating index, cause [auto(bulk api)], shards [1]/[1], mappings [_default_, shard_event, index_event, index_stats, routing_event, node_event, cluster_event, cluster_state, cluster_stats, node_stats, indices_stats]
+[2017-08-28 19:36:59,986][INFO ][cluster.metadata         ] [Nebulo] [.marvel-2017.08.29] update_mapping [node_stats] (dynamic)
+[2017-08-28 19:36:59,994][INFO ][cluster.metadata         ] [Nebulo] [.marvel-2017.08.29] update_mapping [routing_event] (dynamic)
+[2017-08-28 19:36:59,998][INFO ][cluster.metadata         ] [Nebulo] [.marvel-2017.08.29] update_mapping [shard_event] (dynamic)
+[2017-08-28 19:37:00,002][INFO ][cluster.metadata         ] [Nebulo] [.marvel-2017.08.29] update_mapping [cluster_state] (dynamic)
+[2017-08-28 19:37:00,006][INFO ][cluster.metadata         ] [Nebulo] [.marvel-2017.08.29] update_mapping [cluster_event] (dynamic)
+[2017-08-28 19:37:00,010][INFO ][cluster.metadata         ] [Nebulo] [.marvel-2017.08.29] update_mapping [index_event] (dynamic)
+[2017-08-28 19:37:00,014][INFO ][cluster.metadata         ] [Nebulo] [.marvel-2017.08.29] update_mapping [indices_stats] (dynamic)
+[2017-08-28 19:37:00,022][INFO ][cluster.metadata         ] [Nebulo] [.marvel-2017.08.29] update_mapping [index_stats] (dynamic)
+[2017-08-28 19:37:00,026][INFO ][cluster.metadata         ] [Nebulo] [.marvel-2017.08.29] update_mapping [cluster_stats] (dynamic)

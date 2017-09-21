@@ -1,0 +1,111 @@
+/* Space out content a bit */
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: sans-serif;
+  background-image:-webkit-gradient(linear, 0 0, 344 0, from(#4d8564), color-stop(0.008, #4b8362), color-stop(0.023, #4a8662), color-stop(0.043, #4d8765), color-stop(0.055, #508665), color-stop(0.058, #4f8864), color-stop(0.063, #538766), color-stop(0.072, #528967), color-stop(0.09, #558a67), color-stop(0.165, #5e8e6e), color-stop(0.168, #618e6e), color-stop(0.183, #628d6f), color-stop(0.188, #618f6f), color-stop(0.232, #669171), color-stop(0.25, #6a9073), color-stop(0.319, #6f9477), color-stop(0.322, #709378), color-stop(0.325, #709477), color-stop(0.36, #75957a), color-stop(0.363, #75977a), color-stop(0.415, #79967e), color-stop(0.438, #79987e), color-stop(0.438, #7b9880), color-stop(0.447, #7b9980), color-stop(0.462, #7d9781), color-stop(0.47, #7c987f), color-stop(0.473, #7e9881), color-stop(0.514, #819b82), color-stop(0.514, #819985), color-stop(0.549, #839a87), color-stop(0.561, #859b87), color-stop(0.572, #869b89), color-stop(0.642, #8c9d8d), color-stop(0.654, #8d9e8d), color-stop(0.656, #8da08c), color-stop(0.665, #8e9e8d), color-stop(0.706, #91a18f), color-stop(0.706, #919e91), color-stop(0.709, #90a191), color-stop(0.741, #94a094), color-stop(0.764, #94a293), color-stop(0.764, #97a196), color-stop(0.819, #99a49a), color-stop(0.831, #9ba39a), color-stop(0.869, #9ea49e), color-stop(0.88, #9fa49e), color-stop(0.883, #9ea69d), color-stop(0.918, #a1a5a1), color-stop(0.927, #a0a7a1), to(#a8aaa8));
+      background-image:-webkit-linear-gradient(360deg, #4d8564, #4b8362 .8%, #4a8662 2.3%, #4d8765 4.3%, #508665 5.5%, #4f8864 5.8%, #538766 6.3%, #528967 7.2%, #558a67 9%, #5e8e6e 16.5%, #618e6e 16.8%, #628d6f 18.3%, #618f6f 18.8%, #669171 23.2%, #6a9073 25%, #6f9477 31.9%, #709378, #709477 32.5%, #75957a 36%, #75977a 36.3%, #79967e 41.5%, #79987e 43.8%, #7b9880 43.8%, #7b9980 44.7%, #7d9781 46.2%, #7c987f 47%, #7e9881 47.3%, #819b82 51.4%, #819985 51.4%, #839a87 54.9%, #859b87 56.1%, #869b89 57.2%, #8c9d8d 64.2%, #8d9e8d 65.4%, #8da08c 65.6%, #8e9e8d 66.5%, #91a18f 70.6%, #919e91 70.6%, #90a191 70.9%, #94a094 74.1%, #94a293 76.4%, #97a196 76.4%, #99a49a 81.9%, #9ba39a 83.1%, #9ea49e 86.9%, #9fa49e 88%, #9ea69d 88.3%, #a1a5a1 91.8%, #a0a7a1 92.7%, #a8aaa8);
+      background-image:-moz-linear-gradient(360deg, #4d8564, #4b8362 .8%, #4a8662 2.3%, #4d8765 4.3%, #508665 5.5%, #4f8864 5.8%, #538766 6.3%, #528967 7.2%, #558a67 9%, #5e8e6e 16.5%, #618e6e 16.8%, #628d6f 18.3%, #618f6f 18.8%, #669171 23.2%, #6a9073 25%, #6f9477 31.9%, #709378, #709477 32.5%, #75957a 36%, #75977a 36.3%, #79967e 41.5%, #79987e 43.8%, #7b9880 43.8%, #7b9980 44.7%, #7d9781 46.2%, #7c987f 47%, #7e9881 47.3%, #819b82 51.4%, #819985 51.4%, #839a87 54.9%, #859b87 56.1%, #869b89 57.2%, #8c9d8d 64.2%, #8d9e8d 65.4%, #8da08c 65.6%, #8e9e8d 66.5%, #91a18f 70.6%, #919e91 70.6%, #90a191 70.9%, #94a094 74.1%, #94a293 76.4%, #97a196 76.4%, #99a49a 81.9%, #9ba39a 83.1%, #9ea49e 86.9%, #9fa49e 88%, #9ea69d 88.3%, #a1a5a1 91.8%, #a0a7a1 92.7%, #a8aaa8);
+      background-image:-o-linear-gradient(360deg, #4d8564, #4b8362 .8%, #4a8662 2.3%, #4d8765 4.3%, #508665 5.5%, #4f8864 5.8%, #538766 6.3%, #528967 7.2%, #558a67 9%, #5e8e6e 16.5%, #618e6e 16.8%, #628d6f 18.3%, #618f6f 18.8%, #669171 23.2%, #6a9073 25%, #6f9477 31.9%, #709378, #709477 32.5%, #75957a 36%, #75977a 36.3%, #79967e 41.5%, #79987e 43.8%, #7b9880 43.8%, #7b9980 44.7%, #7d9781 46.2%, #7c987f 47%, #7e9881 47.3%, #819b82 51.4%, #819985 51.4%, #839a87 54.9%, #859b87 56.1%, #869b89 57.2%, #8c9d8d 64.2%, #8d9e8d 65.4%, #8da08c 65.6%, #8e9e8d 66.5%, #91a18f 70.6%, #919e91 70.6%, #90a191 70.9%, #94a094 74.1%, #94a293 76.4%, #97a196 76.4%, #99a49a 81.9%, #9ba39a 83.1%, #9ea49e 86.9%, #9fa49e 88%, #9ea69d 88.3%, #a1a5a1 91.8%, #a0a7a1 92.7%, #a8aaa8);
+      background-image:linear-gradient(90deg, #4d8564, #4b8362 .8%, #4a8662 2.3%, #4d8765 4.3%, #508665 5.5%, #4f8864 5.8%, #538766 6.3%, #528967 7.2%, #558a67 9%, #5e8e6e 16.5%, #618e6e 16.8%, #628d6f 18.3%, #618f6f 18.8%, #669171 23.2%, #6a9073 25%, #6f9477 31.9%, #709378, #709477 32.5%, #75957a 36%, #75977a 36.3%, #79967e 41.5%, #79987e 43.8%, #7b9880 43.8%, #7b9980 44.7%, #7d9781 46.2%, #7c987f 47%, #7e9881 47.3%, #819b82 51.4%, #819985 51.4%, #839a87 54.9%, #859b87 56.1%, #869b89 57.2%, #8c9d8d 64.2%, #8d9e8d 65.4%, #8da08c 65.6%, #8e9e8d 66.5%, #91a18f 70.6%, #919e91 70.6%, #90a191 70.9%, #94a094 74.1%, #94a293 76.4%, #97a196 76.4%, #99a49a 81.9%, #9ba39a 83.1%, #9ea49e 86.9%, #9fa49e 88%, #9ea69d 88.3%, #a1a5a1 91.8%, #a0a7a1 100%, #a8aaa8)
+}
+img{
+  width: 300px;
+}
+h3{
+  color:#d1d1d1;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #d1d1d1;
+}
+.navbar-right.li.a:hover{
+  opacity: 0%;
+}
+.navbar-right{
+  margin-top:23px; 
+  font-weight: 400px;
+  font-color: #d1d1d1;
+}
+.larg{
+  font-size: 28px;
+  font-weight: 70px;
+  color: #d1d1d1;
+}
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 930px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #dddddd;
+  
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+li{
+  list-style-type: none;
+}
+.col-md-10{
+  color: #d1d1d1;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

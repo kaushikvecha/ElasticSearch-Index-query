@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JobSearch</title>
+    <link rel="stylesheet" href="http://bootswatch.com/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="testApp">
+<div ng-controller="mainController">
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+            <ul class="navbar-brand">
+                <li role=""><a href=""><img alt="JobSearch" src=""/></a></li>
+            </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li ><a class="larg" href="">Home</a></li>
+            
+           <li> <a class="larg" href="">PostJob</a></li>
+          </ul>
+        </nav>
+        </div>
+         <div class="jumbotron">
+        <h1>Find A Job</h1>
+        
+    <form ng-submit="search()" >
+         <div class="row">
+            <div class="col-md-6">
+            <input type="text" placeholder="Desired Job Title" name="title" class="form-control" ng-model="search.queryTerm" ng-change="autoComplete()">
+                
+            <br>
+            </div>
+            
+            <div class="col-md-6">
+            <input type="text" placeholder="Desired Job Location" name="loc" class="form-control" ng-model="search.city" ng-change="autoComplete()">
+            <br>
+            </div>
+        </div>
+           <input type="submit" class="btn btn-lg btn-success" value="FIND">
+        
+    </form>
+    </div>
+    <h3>Latest Jobs</h3>
+    <div class="row marketing">
+    <ul>
+        <li ng-hide="results.length">
+            
+        </li>
+        <li ng-repeat="result in results" >
+            <div class="col-md-10">
+              <h4>{{result._source.title}}</h4>
+              <p>{{result._source.company}} </p>     
+
+            </div>
+            <div class="col-md-2">
+                    <a class="btn btn-success" href="{{result._source.url}}" target="_blank">View</a>
+            </div>
+         
+        </li>
+        </ul>
+    </div> 
+    
+
+</div>
+</div>
+
+<!-- AngularJS-->
+<script src="bower_components/angular/angular.js"></script>
+<!-- elasticsearch -->
+<script src="bower_components/elasticsearch/elasticsearch.angular.js"></script>
+
+<!-- App -->
+<script src="js/app.js"></script>
+<!-- Controllers -->
+<script src="js/controllers/mainController.js"></script>
+
+</body>
+</html>

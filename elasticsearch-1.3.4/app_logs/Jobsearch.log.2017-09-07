@@ -1,0 +1,34 @@
+[2017-09-07 15:15:33,348][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2017-09-07 15:15:33,548][INFO ][node                     ] [Tom Foster] version[1.3.4], pid[16440], build[a70f3cc/2014-09-30T09:07:17Z]
+[2017-09-07 15:15:33,548][INFO ][node                     ] [Tom Foster] initializing ...
+[2017-09-07 15:15:33,617][INFO ][plugins                  ] [Tom Foster] loaded [marvel], sites [marvel]
+[2017-09-07 15:15:39,301][INFO ][node                     ] [Tom Foster] initialized
+[2017-09-07 15:15:39,301][INFO ][node                     ] [Tom Foster] starting ...
+[2017-09-07 15:15:40,224][INFO ][transport                ] [Tom Foster] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.141:9300]}
+[2017-09-07 15:15:40,716][INFO ][discovery                ] [Tom Foster] Jobsearch/BbAfo7WRR76IRtTfRz0LZg
+[2017-09-07 15:15:43,840][INFO ][cluster.service          ] [Tom Foster] new_master [Tom Foster][BbAfo7WRR76IRtTfRz0LZg][LAPTOP-V07PSLN5][inet[/192.168.1.141:9300]], reason: zen-disco-join (elected_as_master)
+[2017-09-07 15:15:44,051][INFO ][http                     ] [Tom Foster] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.141:9200]}
+[2017-09-07 15:15:44,067][INFO ][node                     ] [Tom Foster] started
+[2017-09-07 15:15:44,923][INFO ][gateway                  ] [Tom Foster] recovered [14] indices into cluster_state
+[2017-09-07 15:15:52,180][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.07] creating index, cause [auto(bulk api)], shards [1]/[1], mappings [_default_, shard_event, index_event, index_stats, node_event, routing_event, cluster_event, cluster_state, cluster_stats, node_stats, indices_stats]
+[2017-09-07 15:15:53,232][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.07] update_mapping [node_stats] (dynamic)
+[2017-09-07 15:15:53,394][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.07] update_mapping [node_event] (dynamic)
+[2017-09-07 15:15:53,478][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.07] update_mapping [shard_event] (dynamic)
+[2017-09-07 15:15:53,478][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.07] update_mapping [cluster_state] (dynamic)
+[2017-09-07 15:15:53,494][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.07] update_mapping [routing_event] (dynamic)
+[2017-09-07 15:15:53,494][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.07] update_mapping [cluster_event] (dynamic)
+[2017-09-07 15:15:53,494][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.07] update_mapping [index_event] (dynamic)
+[2017-09-07 15:15:53,557][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.07] update_mapping [index_stats] (dynamic)
+[2017-09-07 15:15:53,559][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.07] update_mapping [indices_stats] (dynamic)
+[2017-09-07 15:15:53,647][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.07] update_mapping [cluster_stats] (dynamic)
+[2017-09-07 15:16:03,781][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.07] update_mapping [cluster_event] (dynamic)
+[2017-09-07 20:45:52,402][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.08] creating index, cause [auto(bulk api)], shards [1]/[1], mappings [_default_, shard_event, index_event, index_stats, node_event, routing_event, cluster_event, cluster_state, cluster_stats, node_stats, indices_stats]
+[2017-09-07 20:45:55,063][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.08] update_mapping [node_stats] (dynamic)
+[2017-09-07 20:45:55,081][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.08] update_mapping [cluster_state] (dynamic)
+[2017-09-07 20:45:55,098][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.08] update_mapping [shard_event] (dynamic)
+[2017-09-07 20:45:55,107][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.08] update_mapping [routing_event] (dynamic)
+[2017-09-07 20:45:55,128][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.08] update_mapping [cluster_event] (dynamic)
+[2017-09-07 20:45:55,138][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.08] update_mapping [index_event] (dynamic)
+[2017-09-07 20:45:55,383][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.08] update_mapping [index_stats] (dynamic)
+[2017-09-07 20:45:55,397][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.08] update_mapping [indices_stats] (dynamic)
+[2017-09-07 20:45:55,528][INFO ][cluster.metadata         ] [Tom Foster] [.marvel-2017.09.08] update_mapping [cluster_stats] (dynamic)
